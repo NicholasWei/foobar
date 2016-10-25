@@ -1,0 +1,9 @@
+escape ^Zz
+startup_message off
+bind R eval "source $HOME/.screenrc" "echo '.screenrc reloaded!'"
+hardstatus alwayslastline
+hardstatus string "%{rk}%w"
+vbell off
+defscrollback 5000
+autodetach on
+altscreen on
