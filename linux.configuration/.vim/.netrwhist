@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/c4_working/ws/snmp_ws/cp/components/providers/osls/AlertServices/src'
+let g:netrw_dirhist_2='/c4_working/git.ws/S12Y/serviceability/components/cbr/src/cbr_config'
+let g:netrw_dirhist_3='/c4_working/git.ws/S12Y/serviceability/components/dc'
+let g:netrw_dirhist_4='/c4_working/git.ws/S12Y/c4core/src/platform/new_logging/logDaemon'
+let g:netrw_dirhist_5='/c4_working/git.ws/24.2/serviceability/components/checkdiskusage'
+let g:netrw_dirhist_6='/c4_working/nicholas/cpp'
+let g:netrw_dirhist_7='/c4_working/git.ws/bugfix/c4core/src/platform/new_logging/logDaemon'

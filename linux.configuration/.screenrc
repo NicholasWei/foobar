@@ -1,9 +1,31 @@
 escape ^Zz
-startup_message off
-bind R eval "source $HOME/.screenrc" "echo '.screenrc reloaded!'"
-hardstatus alwayslastline
-hardstatus string "%{rk}%w"
+#bind R eval "source $HOME/.screenrc" "echo '.screenrc reloaded!'"
 vbell off
 defscrollback 5000
 autodetach on
 altscreen on
+# kill startup message
+startup_message off
+
+# scrollback
+defscrollback 10240
+
+# bottom line status bar
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kg}[%{G}%H%{g}][%{= kw}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}]%{= ky}[%l]%{=b C}[%d %M %c]'
+# explain:
+#   %{= kg} use black-green for following string
+#   %{G} use light green
+#   %H display hostname
+#   %{g} use green
+#   %= center?
+#   %{= kw} use black-white
+#   %?...%? if % inside it is not empty, then display it
+#   %-Lw all window name(w), till current window(-), show window flag(L)
+#   %{=b kR} bold black-light red
+#   %{W} light white
+#   %n window number
+#   %f window flag
+#   %t window title
+#   %u other users on this window
